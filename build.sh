@@ -8,4 +8,4 @@ docker build -t twitch-irc-build \
 mkdir -p dist
 
 # build into build
-docker run --rm -v ${PWD}/dist:/build twitch-irc-build --dist-dir /build
+docker run --rm -v ${PWD}/dist:/usr/local/app/build/dist twitch-irc-build
