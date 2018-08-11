@@ -1,9 +1,7 @@
 .git
 .gitignore
-README.md
 
 docker-compose.yml
-docker-compose-dev.yml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
