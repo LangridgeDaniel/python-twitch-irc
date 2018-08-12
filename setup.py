@@ -8,7 +8,7 @@ with open("README.md", "r") as fp:
 
 setup(
     name="python-twitch-irc",
-    version="1.0.1",
+    version="1.0.2",
     author="jspaulsen",
     author_email="jspaulsen@github.com",
     description="Python Library for Twitch IRC eccentricities",
