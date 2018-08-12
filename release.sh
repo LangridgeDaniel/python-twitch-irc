@@ -3,11 +3,11 @@ set -ex
 
 # export TWINE_REPOSITORY_URL=https://pypi.org/
 
-docker build -t twitch-irc-release \
+docker build -t python-twitch-irc-release \
   --target release .
 
 docker run --rm \
   -v ${PWD}/dist:/dist \
   -e TWINE_USERNAME \
   -e TWINE_PASSWORD \
-  twitch-irc-release /dist/*
+  python-twitch-irc-release /dist/*

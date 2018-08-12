@@ -1,11 +1,11 @@
 # python-twitch-irc
-`twitch_irc` is a layer of logic which takes the [Pydle] package and provides (or modifies existing) logic to handle Twitch IRC pecularities.
+`python-twitch-irc` is a layer of logic which takes the [Pydle] package and provides (or modifies existing) logic to handle Twitch IRC pecularities.
 
 ## Installation
-`twitch_irc` can be installed via `pip install twitch_irc`
+`python-twitch-irc` can be installed via `pip install python-twitch-irc`
 
 ## Usage
-`twitch_irc` is a layer which sits above `Pydle` so if documentation is lacking, refer to `Pydle` documentation.  Twitch IRC is not fully compliant with RFC1459 and later, so some behaviors may not function as expected (such as who/whois, nick, etc).
+`python-twitch-irc` is a layer which sits above `Pydle` so if documentation is lacking, refer to `Pydle` documentation.  Twitch IRC is not fully compliant with RFC1459 and later, so some behaviors may not function as expected (such as who/whois, nick, etc).
 
 ### Twitch
 Utilizing this library requires a Twitch account and a token generated for that account.  A token can be generated via [TwitchApps].  Note that the generated token has the prefix 'oauth' which should be removed before use.
@@ -16,7 +16,7 @@ Utilizing this library requires a Twitch account and a token generated for that 
 ### Basic Usage
 `TwitchIrc` is expected to be used as a base class.
 ```python
-from twitch_irc import TwitchIrc
+from python_twitch_irc import TwitchIrc
 
 # Simple echo bot.
 class MyOwnBot(TwitchIrc):
@@ -158,7 +158,7 @@ def on_capability_twitch_tv_commands_available(self, value):
 ## Development
 Development environment utilizes `docker` and `docker-compose` for building and testing the library.
 ### Building
-The `twitch_irc` library can be build via `./build.sh`
+The `python_twitch_irc` library can be build via `./build.sh`
 ### Testing
 The unit tests can be run via `./test.sh`.  Local changes can be tested without rebuilding the test container via `./test-dev.sh` but requires that the initial test container be built.
 

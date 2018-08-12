@@ -1,7 +1,7 @@
 import unittest
 from unittest import mock
 
-from twitch_irc import TwitchIrc
+from python_twitch_irc import TwitchIrc
 
 
 class Dummy:

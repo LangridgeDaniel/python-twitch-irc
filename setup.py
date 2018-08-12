@@ -7,7 +7,7 @@ with open("README.md", "r") as fp:
     long_desc = fp.read()
 
 setup(
-    name="twitch_irc",
+    name="python-twitch-irc",
     version="1.0.1",
     author="jspaulsen",
     author_email="jspaulsen@github.com",
