@@ -1,14 +1,14 @@
 version: "3.4"
 services:
-  twitch-irc-tests:
-    image: twitch-irc-tests
-    container_name: twitch-irc-tests
+  python-twitch-irc-tests:
+    image: python-twitch-irc-tests
+    container_name: python-twitch-irc-tests
     tty: true
     volumes:
       - ${PWD}:/project
     entrypoint: "sh -c \"\
       cd /project && \
-      pip3 uninstall twitch_irc -y && \
+      pip3 uninstall python-twitch-irc -y && \
       python3 setup.py install && \
       nose2 -c nose2.cfg -vvv
       \""

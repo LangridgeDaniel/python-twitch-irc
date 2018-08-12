@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ex
 
-docker build -t twitch-irc-tests \
+docker build -t python-twitch-irc-tests \
   --target test .
 
-docker run --rm twitch-irc-tests -vvv
+docker run --rm python-twitch-irc-tests -vvv
