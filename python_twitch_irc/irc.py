@@ -169,7 +169,7 @@ class TwitchIrc(BaseIrcClass):
         host = message.params[0].split('#')[1]
         params = message.params[1].split()
         hostee = params[0]
-        viewers = int(params[1])
+        viewers = int(params[1]) if params[1] != '-' else 0
 
         if hostee == '-':
             self.on_stop_hosting(timestamp, host, viewers)
